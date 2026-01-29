@@ -16,12 +16,8 @@
 ### ③cp.env.example.env
 
 *.envファイルは、以下の部分を変更*
- 
-DB_CONNECTION=mysql
    
 DB_HOST=mysql  
-   
-DB_PORT=3306  
    
 DB_DATABASE=laravel_db  
    
