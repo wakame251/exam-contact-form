@@ -33,6 +33,7 @@ DB_PASSWORD=laravel_pass
 
 ### ⑤php artisan migrate
 
+### ⑥php artisan db:seed
 
 ## 3. 開発環境
 
