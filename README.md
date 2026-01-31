@@ -55,3 +55,4 @@ DB_PASSWORD=   →   DB_PASSWORD=laravel_pass
 ## 5. ER図
 
 <img width="505" height="741" alt="exam-contact-form drawio" src="https://github.com/user-attachments/assets/984a86db-cf72-4958-8fd6-ed9578343673" />
+
