@@ -4,9 +4,11 @@
 
 ## 1. Dockerビルド
 
-### ①git@github.com:wakame251/exam-contact-form.git
+### ①git clone git@github.com:wakame251/exam-contact-form.git
 
-### ②docker-compose up -d --build
+### ②cd exam-contact-form
+
+### ③docker-compose up -d --build
 
 ## 2. Laravel環境構築
 
@@ -14,17 +16,17 @@
 
 ### ②composer install
 
-### ③cp.env.example.env
+### ③cp .env.example .env
 
-_.envファイルは、以下の部分を変更_
+_.envファイルは、11行目以降のDBの部分を以下の内容に変更_
 
-DB_HOST=mysql
+DB_HOST=127.0.0.1   →   DB_HOST=mysql
 
-DB_DATABASE=laravel_db
+DB_DATABASE=laravel   →   DB_DATABASE=laravel_db
 
-DB_USERNAME=laravel_user
+DB_USERNAME=root   →   DB_USERNAME=laravel_user
 
-DB_PASSWORD=laravel_pass
+DB_PASSWORD=   →   DB_PASSWORD=laravel_pass
 
 ### ④php artisan key:generate
 
