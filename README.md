@@ -1,43 +1,55 @@
-環境構築
+# 環境構築
 
-Dockerビルド
+---
 
-・git@github.com:wakame251/exam-contact-form.git
+## 1. Dockerビルド
 
-・docker-compose up -d --build
+### ①git@github.com:wakame251/exam-contact-form.git
 
+### ②docker-compose up -d --build
 
-Laravel環境構築
+## 2. Laravel環境構築
 
-・docker-compose exec php bash
+### ①docker-compose exec php bash
 
-・composer install
+### ②composer install
 
-・cp.env.example.env,環境変数を適宜変更
+### ③cp.env.example.env
 
-・php artisan key:generate
+_.envファイルは、以下の部分を変更_
 
-・php artisan migrate
+DB_HOST=mysql
 
+DB_DATABASE=laravel_db
 
-開発環境
+DB_USERNAME=laravel_user
 
-・お問い合わせ画面：http://localhost/
+DB_PASSWORD=laravel_pass
 
-・ユーザー登録：http://localhost/register
+### ④php artisan key:generate
 
-・phpMyAdmin：http://localhost:8080/
+### ⑤php artisan migrate
 
+### ⑥php artisan db:seed
 
-使用技術（実行環境）
-・PHP Version 8.1.34
+## 3. 開発環境
 
-・Laravel Framework 8.83.8
+### ・お問い合わせ画面：http://localhost/
 
-・mysql  Ver 8.0.26
+### ・ユーザー登録画面：http://localhost/register
 
-・nginx/1.21.1
+### ・phpMyAdmin：http://localhost:8080/
 
-ER図
+## 4. 使用技術（実行環境）
 
-![ER図](docs/images/exam-contact-form.drawio.png)
+### ・PHP Version 8.1.34
+
+### ・Laravel Framework 8.83.8
+
+### ・mysql Ver 8.0.26
+
+### ・nginx/1.21.1
+
+## 5. ER図
+
+<img width="505" height="741" alt="exam-contact-form drawio" src="https://github.com/user-attachments/assets/984a86db-cf72-4958-8fd6-ed9578343673" />
